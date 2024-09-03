@@ -5,3 +5,14 @@
 #  and comparing.Magic methods will always take the __<>__() form. For example, in the following code snippet
 # the __str__() magic method is defined for the Car class.
 
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model =model
+
+    def __str__(self):
+        return f"make: {self.make}, model: {self.model}"
+    myCar = Car("Toyota", "Corolla")
+    print (myCar)
+
+
